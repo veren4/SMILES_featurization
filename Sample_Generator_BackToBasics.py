@@ -4,13 +4,16 @@
 #                                                                                                      #
 ########################################################################################################
 
-dataset_filepath = '../sample_file_numbered.txt' #'../datasets/PubChem/CID-SMILES'
+#dataset_filepath = '../datasets/PubChem/CID-SMILES'
+dataset_filepath = '../datasets/Lenselink_et_al/Dataset_files_342_MB/data/Supplementary_Information/dataset/compound_additional_physchem_features.txt'
 
-sample_size = 3 #200
 
-number_of_lines_in_dataset = 101 # 103276515     # true number of lines (looked up in linux terminal, as the file is "just" 2,2 G in size.
+sample_size = 200
 
-random_seed = 3
+#number_of_lines_in_dataset = 103276515     # PubChem
+number_of_lines_in_dataset = 204086   # Lenselink
+
+random_seed = 5
 
 ######################################## adapt parameters above ########################################
 
@@ -41,7 +44,7 @@ with open(dataset_filepath) as ds:
             else:
                 break
 
-    sample_file.close()
+sample_file.close()
         
 
 
