@@ -41,7 +41,7 @@ with open(dataset_filepath) as ds:
         # draw the samples
         next_searched_line = lines_to_draw.pop(0)
 
-        for index, line in enumerate(ds):    # The index starts new every iteration, the line aka enumeration doesn't!!!
+        for index, line in enumerate(iterable=ds):    # The index starts new every iteration, the line aka enumeration doesn't!!!
 
             if index > my_to:
                 break
