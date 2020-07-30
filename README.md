@@ -33,9 +33,6 @@ I filter the PubChem dataset for entries that have a token-alphabet that is a su
 * alphabet_finder_0.py\
 A script that extracts the token-alphabet from a file that contains SMILES with my own tokenization method and saves them to a txt file.
 
-* Handling_large_datasets.ipynb\
-My (failed) approach to generate a script that can handle (large) files without loading them into memory all at once.
-
 * Lenselink_0_Mapping_SMILES_to_Lenselink.ipynb\
 
 * Lenselink_1_Molecular_Notation_Transformation.ipynb\
@@ -48,16 +45,7 @@ My (failed) approach to generate a script that can handle (large) files without 
 
 * Lenselink_4_Clustering_embeddings.ipynb\
 
-* PubChem package.ipynb\
-I explore the PubChemPy package.
-
 * Sample_Generator_BackToBasics.py\
 This script draws x random samples of size y from a dataset without loading the dataset into memory.
 
 * Subset_Generator_linecounter.py\
-
-* Subset_Generator_PubChem.py\
-My failed attempt to make a random-subset-generator that draws x samples à n rows from a dataset without loading it into memory.
-
-* Subset_Generator.py\
-something wrong.
