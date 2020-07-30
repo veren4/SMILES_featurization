@@ -9,8 +9,6 @@ subset = subset.rename(columns={0: "canonical_SMILES"})
 
 
 
-
-
 total_SMILES = "".join(subset.canonical_SMILES)
 alphabet = set([])
 
