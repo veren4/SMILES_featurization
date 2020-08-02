@@ -8,12 +8,12 @@
 dataset_filepath = '../datasets/Lenselink_et_al/Dataset_files_342_MB/data/Supplementary_Information/dataset/compound_additional_physchem_features.txt'
 
 
-sample_size = 200
+sample_size = 10000
 
 #number_of_lines_in_dataset = 103276515     # PubChem
 number_of_lines_in_dataset = 204086   # Lenselink
 
-random_seed = 5
+random_seed = 42
 
 ######################################## adapt parameters above ########################################
 
@@ -22,7 +22,7 @@ import random
 random.seed(a=random_seed)
 
 # generate and open an output file
-sample_filename = 'sample_' + str(random_seed) + '.txt'
+sample_filename = 'Lenselink_sample_' + str(random_seed) + '.txt'
 sample_file = open(sample_filename, 'a')
 
 # generate the random lines
